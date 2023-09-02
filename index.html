@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+	<head>
+		<title>CRM HTML</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		<style>
+			/*--- general CSS ---*/
+			body {
+				background: #E4E0D5;
+				font-family: Tahoma, Arial;
+				font-size: 15px;
+				margin: 0;
+			}
+			.wrap {
+				width: 90%;
+				margin: 16px auto 0;
+			}
+			/*--- Header CSS ---*/
+			header {
+				background: #05343A;
+				border-radius: 4px;
+				color: #88C1AD;
+				/*margin: 50px;*/
+				padding: 20px;
+			}
+			header .price {
+				background: #336F5E;
+				border-radius: 2px;
+				display: inline-block;
+				padding: 2px 5px;
+			}
+			header h1 {
+				margin: 0.5em 0;
+				text-transform: capitalize;
+			}
+			header .level, header .time {
+				font-family: cursive;
+				display: block;
+				margin: 0.5em 0;
+			}
+			header .level i, header .time i {
+				font-size: 14px;
+				margin-right: 5px;
+			}
+			header label {
+				font-size: 14px;
+			}
+			header ul {
+				line-height: 30px;
+				list-style: none;
+				margin: 0.5em 0 0;
+				padding: 0;
+			}
+			header ul li {
+				display: inline;
+			}
+			header ul li a {
+				border: 1px solid #88C1AD;
+				border-radius: 2px;
+				color: #88C1AD;
+				padding: 3px 6px;
+				text-decoration: none;
+				transition: 0.3s all ease-in-out;
+				-webkit-transition: 0.3s all ease-in-out;
+			}
+			header ul li a:hover {
+				background: #336F5E;
+				text-decoration: none;
+			}
+			/*--- Section CSS ---*/
+			section {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				margin: 80px 0;
+			}
+			section .steps {
+				background: #0a736c;
+				border-radius: 50%;
+				box-shadow: 5px 5px 50px 10px #0E544D inset;
+				-webkit-box-shadow: 5px 5px 50px 10px #0E544D inset;
+				color: #99DED9;
+				height: 160px;
+				margin: 10px;
+				padding: 20px;
+				text-align: center;
+				text-transform: capitalize;
+				width: 250px;
+			}
+			section .steps:first-child {
+				margin-top: 0;
+			}
+			section .steps:last-child {
+				margin-bottom: 0;
+			}
+			section .steps #num {
+				cursor: help;
+				display: inline-block;
+				font-family: cursive;
+				font-size: 20px;
+				font-weight: 700;
+			}
+			section .steps .content {
+				display: block;
+				line-height: 1.5;
+				margin: 20px auto 0;
+			}
+			/*--- Footer CSS ---*/
+			footer {
+				background: #78D891;
+				padding: 30px;
+				position: relative;
+			}
+			footer .cube {
+				position: absolute;
+				bottom: 20%;
+				left: 5%;
+			}
+			footer .cube img {
+				width: 20%;
+				/*transition: 0.5s all ease;
+				-webkit-transition: 0.5s all ease;*/
+			}
+			/*footer .cube img:hover {
+				opacity: 0.7;
+				transition: 0.5s all ease;
+				-webkit-transition: 0.5s all ease;
+			}*/
+			footer .button {
+				background: #05343A;
+				border-radius: 5px;
+				bottom: 50%;
+				color: #FFF;
+				font-family: monospace;
+				font-size: 17px;
+				font-weight: 700;
+				height: 50px;
+				line-height: 50px;
+				position: absolute;
+				padding: 5px;
+				right: 5%;
+				text-align: center;
+				text-decoration: none;
+				text-transform: capitalize;
+				width: 200px;
+			}
+			footer .button:hover {
+				background: #FFF;
+				border: 4px solid #05343A;
+				color: #000;
+				height: 42px;
+				line-height: 42px;
+				width: 192px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Begin Wrap -->
+		<div class="wrap">
+			<!-- Begin Header -->
+			<header>
+				<span class="price">Free</span>
+				<h1>customer relationship manager</h1>
+				<span class="level"><i class="material-symbols-outlined">trending_up</i>Advanced</span>
+				<span class="time"><i class="material-symbols-outlined">schedule</i>75 Hours</span>
+				<label>Skills</label>
+				<ul>
+					<li><a href="#" title="Spring Framework">Spring Framework</a></li>
+					<li><a href="#" title="Spring Core">Spring Core</a></li>
+					<li><a href="#" title="Spring MVC">Spring MVC</a></li>
+					<li><a href="#" title="Hibernate (CRM Framework)">Hibernate (CRM Framework)</a></li>
+					<li><a href="#" title="Java Database Connectivity">JDBC</a></li>
+					<li><a href="#" title="Maven">Maven</a></li>
+					<li><a href="#" title="Java Server Pages">JSP</a></li>
+					<li><a href="#" title="Hypertext Transfer Protocol">HTTP</a></li>
+					<li><a href="#" title="MySQL">MySQL</a></li>
+				</ul>
+			</header>
+			<!-- End Header -->
+			<!-- Begin Section -->
+			<section>
+				<div class="steps">
+					<span id="num" title="Step One">1</span>
+					<span class="content">create a Maven project using spring MVC</span>
+				</div>
+				<div class="steps">
+					<span id="num" title="Step Two">2</span>
+					<span class="content">design the database table for customers</span>
+				</div>
+				<div class="steps">
+					<span id="num" title="Step Three">3</span>
+					<span class="content">write the controller service and DAO layers to excute the CRUD operations</span>
+				</div>
+				<div class="steps">
+					<span id="num" title="Step Four">4</span>
+					<span class="content">build the Front-End of the web app using HTML, CSS to accept input and render data correspondingly</span>
+				</div>
+				<div class="steps">
+					<span id="num" title="Step Five">5</span>
+					<span class="content">integrate the controller with the database to successfuly build the Customer Relationship Manager web Application</span>
+				</div>
+			</section>
+			<!-- End Section -->
+		</div>
+		<!-- End Wrap -->
+		<!-- Begin Footer -->
+		<footer>
+			<div class="cube">
+				<img src="images/cube.png" alt="Cube image" />
+			</div>
+			<a href="#" title="View The Full Project" onclick="window.location.reload(true);" class="button">
+				<span>view the project</span>
+			</a>
+		</footer>
+		<!-- End Footer -->
+	</body>
+</html>
