@@ -23,7 +23,6 @@
 				background: #05343A;
 				border-radius: 4px;
 				color: #88C1AD;
-				/*margin: 50px;*/
 				padding: 20px;
 			}
 			header .price {
@@ -46,28 +45,27 @@
 				margin-right: 5px;
 			}
 			header label {
-				font-size: 14px;
+				/*font-size: 14px;*/
 				cursor: text;
 			}
-			header ul {
+			header .skills {
 				line-height: 30px;
 				list-style: none;
 				margin: 0.5em 0 0;
 				padding: 0;
 			}
-			header ul li {
+			header .skills li {
 				display: inline;
 			}
-			header ul li a {
+			header .skills li a {
 				border: 1px solid #88C1AD;
 				border-radius: 2px;
 				color: #88C1AD;
 				padding: 3px 6px;
 				text-decoration: none;
 				transition: 0.3s all ease-in-out;
-				-webkit-transition: 0.3s all ease-in-out;
 			}
-			header ul li a:hover {
+			header .skills li a:hover {
 				background: #336F5E;
 				text-decoration: none;
 			}
@@ -76,20 +74,19 @@
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: center;
-				margin: 80px 0;
+				margin: 30px 0;
 			}
 			section .steps {
 				background: #0a736c;
 				border-radius: 50%;
-				box-shadow: 5px 5px 50px 10px #0E544D inset;
-				-webkit-box-shadow: 5px 5px 50px 10px #0E544D inset;
+				box-shadow: 10px 10px 50px 10px #0E544D inset;
 				color: #99DED9;
-				height: 160px;
-				margin: 10px;
-				padding: 20px;
+				height: 200px;
+				margin: 10px 20px;
+				padding: 25px;
 				text-align: center;
 				text-transform: capitalize;
-				width: 250px;
+				width: 200px;
 			}
 			section .steps #num {
 				cursor: help;
@@ -99,7 +96,7 @@
 				font-weight: 700;
 			}
 			section .steps .content {
-				line-height: 1.5;
+				line-height: 2;
 			}
 			/*--- Footer CSS ---*/
 			footer {
@@ -114,14 +111,7 @@
 			}
 			footer .cube img {
 				width: 20%;
-				/*transition: 0.5s all ease;
-				-webkit-transition: 0.5s all ease;*/
 			}
-			/*footer .cube img:hover {
-				opacity: 0.7;
-				transition: 0.5s all ease;
-				-webkit-transition: 0.5s all ease;
-			}*/
 			footer .button {
 				background: #05343A;
 				border-radius: 5px;
@@ -160,7 +150,7 @@
 				<span class="level"><i class="material-symbols-outlined">trending_up</i>Advanced</span>
 				<span class="time"><i class="material-symbols-outlined">schedule</i>75 Hours</span>
 				<label>Skills</label>
-				<ul>
+				<ul class="skills">
 					<li><a href="#" title="Spring Framework">Spring Framework</a></li>
 					<li><a href="#" title="Spring Core">Spring Core</a></li>
 					<li><a href="#" title="Spring MVC">Spring MVC</a></li>
